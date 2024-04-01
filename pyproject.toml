@@ -1,12 +1,12 @@
 [build-system]
 requires = [
     "setuptools >= 64",
-    "setuptools_scm[toml] >= 6.4"
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "typeguard"
+version = "4.4.1"
 description = "Run-time type checker for Python"
 readme = "README.rst"
 authors = [{name = "Alex Grönholm", email = "alex.gronholm@nextday.fi"}]
@@ -28,7 +28,6 @@ dependencies = [
     "importlib_metadata >= 3.6; python_version < '3.10'",
     "typing_extensions >= 4.10.0",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Documentation = "https://typeguard.readthedocs.io/en/latest/"
@@ -54,10 +53,6 @@ pytest11 = {typeguard = "typeguard._pytest_plugin"}
 
 [tool.setuptools.package-data]
 typeguard = ["py.typed"]
-
-[tool.setuptools_scm]
-version_scheme = "post-release"
-local_scheme = "dirty-tag"
 
 [tool.pytest.ini_options]
 addopts = "--tb=short"
