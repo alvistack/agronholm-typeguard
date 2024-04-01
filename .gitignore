@@ -13,3 +13,4 @@ dist/
 build/
 .pre-commit-config.yaml
 .mypy_cache/
+.pybuild/
