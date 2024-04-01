@@ -1,0 +1,29 @@
+Source: python-typeguard
+Section: python
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+Homepage: https://github.com/agronholm/typeguard/tags
+Vcs-Browser: https://github.com/alvistack/agronholm-typeguard
+Vcs-Git: https://github.com/alvistack/agronholm-typeguard.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ dh-python,
+ fdupes,
+ python3-dev,
+ python3-setuptools,
+
+Package: python3-typeguard
+Architecture: all
+Description: Run-time type checker for Python
+ This library provides run-time type checking for functions defined with
+ PEP 484 argument (and return) type annotations, and any arbitrary
+ objects. It can be used together with static type checkers as an
+ additional layer of type safety, to catch type violations that could
+ only be detected at run time.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${python3:Depends},
+ python3,
