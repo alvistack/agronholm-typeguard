@@ -1,0 +1,5 @@
+python-typeguard source: file-without-copyright-information
+python-typeguard source: no-debian-changes
+python-typeguard source: source-contains-prebuilt-windows-binary
+python-typeguard source: source-is-missing
+python-typeguard source: source-package-encodes-python-version
