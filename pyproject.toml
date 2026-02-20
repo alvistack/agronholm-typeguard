@@ -1,16 +1,16 @@
 [build-system]
 requires = [
     "setuptools >= 77",
-    "setuptools_scm[toml] >= 6.4"
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "typeguard"
+version = "4.5.1"
 description = "Run-time type checker for Python"
 readme = "README.rst"
 authors = [{name = "Alex Grönholm", email = "alex.gronholm@nextday.fi"}]
-license = "MIT"
+license = {text = "MIT"}
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
@@ -28,7 +28,6 @@ dependencies = [
     "importlib_metadata >= 3.6; python_version < '3.10'",
     "typing_extensions >= 4.14.0",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Documentation = "https://typeguard.readthedocs.io/en/latest/"
@@ -54,10 +53,6 @@ doc = [
 
 [tool.setuptools.package-data]
 typeguard = ["py.typed"]
-
-[tool.setuptools_scm]
-version_scheme = "post-release"
-local_scheme = "dirty-tag"
 
 [tool.pytest.ini_options]
 addopts = "--tb=short"
